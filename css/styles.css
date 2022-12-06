@@ -30,6 +30,7 @@ a {
   text-decoration: none;
 }
 
+/* ==================NAVIGAGION================== */
 .logo {
   font-size: 18px;
   font-weight: 800;
@@ -82,6 +83,7 @@ header {
   color: var(--white-button-text-color);
 }
 
+/* ==========================HERO============================== */
 .hero-title {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -103,7 +105,7 @@ button {
   cursor: pointer;
   letter-spacing: 0.04em;
   line-height: 1.17;
-    display: flex;
+  display: flex;
 }
 
 .blue-button {
@@ -127,26 +129,7 @@ button {
   background-color: var(--active-blue-button-color);
 }
 
-.white-button {
-  border-radius: 4px;
-  padding: 16px 32px 16px 32px;
-  background-color: var(--white-button-color);
-  color: var(--white-button-text-color);
-}
-
-.white-button:hover,
-.white-button:focus {
-  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-  background-color: var(--blue-button-color);
-  color: var(--blue-button-text-color);
-}
-
-.white-button:active {
-  box-shadow: 0px 4px 4px 0px #00000026;
-  background-color: var(--active-blue-button-color);
-  color: #ffffff;
-}
-
+/* ===================ADVANTAGES============================= */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -160,23 +143,21 @@ button {
   overflow: hidden;
 }
 
+.advantages-sub-title {
+  color: var(--title-color-navyblue);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
 .advantages-list-item {
   line-height: 1.5;
   font-size: 16px;
 }
 
-.member-list p {
-  line-height: 1.5;
-  font-size: 16px;
-}
-
-.project-item h2 {
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--title-color-navyblue);
-  font-weight: 700;
-}
-
+/* =============================OFFERS=================================== */
 .occupation h2 {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -185,6 +166,12 @@ button {
   letter-spacing: 0.02em;
   color: var(--title-color-navyblue);
   font-weight: 700;
+}
+
+/* ===============================================OUR TEAM====================== */
+.member-list p {
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .our-team-title {
@@ -199,7 +186,7 @@ button {
   background-color: var(--secondary-background-color);
 }
 
-.our-team h3 {
+.member {
   color: var(--title-color-navyblue);
   font-size: 20px;
   line-height: 1.2;
@@ -212,6 +199,7 @@ button {
   margin: 24px;
 }
 
+/* =========================================FOOTER========================== */
 footer .second-logo {
   color: #f4f4fd;
   font-weight: 800;
@@ -232,6 +220,28 @@ footer {
   line-height: 1.5;
 }
 
+/* =====================================================PORTFOLIO======================== */
+
+.white-button {
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  background-color: var(--white-button-color);
+  color: var(--white-button-text-color);
+}
+
+.white-button:hover,
+.white-button:focus {
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  background-color: var(--blue-button-color);
+  color: var(--blue-button-text-color);
+}
+
+.white-button:active {
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: var(--active-blue-button-color);
+  color: #ffffff;
+}
+
 .project-card li a {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -239,20 +249,18 @@ footer {
   height: 300px;
 }
 
+.project-item-title {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-color-navyblue);
+  font-weight: 700;
+}
+
 .project-item {
   width: 360px;
   height: 420px;
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.advantages-sub-title {
-  color: var(--title-color-navyblue);
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
 }
 
 .project-card li a:hover,
