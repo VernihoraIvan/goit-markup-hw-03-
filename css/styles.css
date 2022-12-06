@@ -1,0 +1,268 @@
+/* main background color #E5E5E5 */
+/* secondary background color #F4F4FD */
+/* (title, footer and hero) title color "NAVY BLUE" #2E2F42 */
+/* text color slate #434455 */
+/* white button color  #E7E9FC */
+/* white button text color "IRIS" #4D5AE5 */
+/* blue button color #4D5AE5 */
+/* blue button text color #FFFFFF */
+/* active blue button color #404BBF */
+
+:root {
+  --main-background-color: #ffffff;
+  --secondary-background-color: #f4f4fd;
+  --title-color-navyblue: #2e2f42;
+  --text-color-slate: #434455;
+  --white-button-color: #f4f4fd;
+  --white-button-text-color: #4d5ae5;
+  --blue-button-color: #4d5ae5;
+  --blue-button-text-color: #ffffff;
+  --active-blue-button-color: #404bbf;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--text-color-slate);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: var(--title-color-navyblue);
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: var(--main-background-color);
+}
+
+.nav-list li {
+  font-weight: 700;
+  color: var(--title-color-navyblue);
+}
+
+.nav-list a {
+  color: var(--title-color-navyblue);
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--white-button-text-color);
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+  color: var(--blue-button-color);
+}
+
+.nav-list a:active {
+  color: var(--blue-button-color);
+}
+
+.contact-list a {
+  color: var(--text-color-slate);
+}
+
+.contact-list a:active {
+  color: var(--active-blue-button-color);
+}
+
+.blue-logo {
+  color: var(--white-button-text-color);
+}
+
+.hero-title {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 1.07;
+  color: var(--blue-button-text-color);
+  font-weight: 700;
+  font-size: 56px;
+  width: 492px;
+}
+
+.hero {
+  background-color: var(--title-color-navyblue);
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  line-height: 1.17;
+    display: flex;
+}
+
+.blue-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  background-color: var(--blue-button-color);
+  color: var(--blue-button-text-color);
+  letter-spacing: 0.02em;
+  line-height: 1.17;
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  background-color: #404bbf;
+}
+
+.blue-button:active {
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: var(--active-blue-button-color);
+}
+
+.white-button {
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
+  background-color: var(--white-button-color);
+  color: var(--white-button-text-color);
+}
+
+.white-button:hover,
+.white-button:focus {
+  box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+  background-color: var(--blue-button-color);
+  color: var(--blue-button-text-color);
+}
+
+.white-button:active {
+  box-shadow: 0px 4px 4px 0px #00000026;
+  background-color: var(--active-blue-button-color);
+  color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-list-item {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.member-list p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.project-item h2 {
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--title-color-navyblue);
+  font-weight: 700;
+}
+
+.occupation h2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--title-color-navyblue);
+  font-weight: 700;
+}
+
+.our-team-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  color: var(--title-color-navyblue);
+  line-height: 1.1;
+}
+
+.our-team {
+  background-color: var(--secondary-background-color);
+}
+
+.our-team h3 {
+  color: var(--title-color-navyblue);
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.our-team li {
+  width: 264px;
+  height: 380px;
+  background-color: var(--main-background-color);
+  margin: 24px;
+}
+
+footer .second-logo {
+  color: #f4f4fd;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+footer {
+  background-color: var(--title-color-navyblue);
+}
+
+.summury {
+  width: 264px;
+  color: #e7e9fc;
+  line-height: 1.5;
+}
+
+.project-card li a {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  width: 360px;
+  height: 300px;
+}
+
+.project-item {
+  width: 360px;
+  height: 420px;
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.advantages-sub-title {
+  color: var(--title-color-navyblue);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.project-card li a:hover,
+.project-card li a:focus {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-item p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: var(--text-color-slate);
+}
