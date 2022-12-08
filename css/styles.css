@@ -20,6 +20,10 @@
   --active-blue-button-color: #404bbf;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
@@ -38,7 +42,40 @@ a {
   font-family: "Raleway", sans-serif;
   color: var(--title-color-navyblue);
   letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+
+  .container {
+    width: 1158px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
 }
+/* ==============================FLEX======================= */
+.header {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.contact-list {
+  display: flex;
+      align-items: center;
+}
+
+.container-header {
+  display: flex;
+  padding: 24px 15px 24px 15px;
+  margin: auto;
+      align-items: center;
+}
+/* ==============================FLEX======================= */
 
 ul {
   list-style: none;
@@ -51,6 +88,18 @@ header {
 .nav-list li {
   font-weight: 700;
   color: var(--title-color-navyblue);
+  line-height: 1.5;
+  margin-right: 40px;
+}
+.nav-list li:first-child {
+  margin-left: 77px;
+}
+
+.nav-list li:last-child {
+  margin-right: 331px;
+}
+.contact-list li:first-child {
+  margin-right: 40px;
 }
 
 .nav-list a {
@@ -92,10 +141,22 @@ header {
   font-weight: 700;
   font-size: 56px;
   width: 492px;
+  margin-bottom: 48px;
+}
+
+.hero .container {
+  padding: 0px 15px;
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: var(--title-color-navyblue);
+  padding-top: 192px;
+  padding-bottom: 192px;
 }
 
 button {
@@ -143,6 +204,18 @@ button {
   overflow: hidden;
 }
 
+.advantages-list {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.container-advantages {
+  display: flex;
+  justify-content: center;
+}
+
 .advantages-sub-title {
   color: var(--title-color-navyblue);
   font-family: "Roboto", sans-serif;
@@ -155,6 +228,12 @@ button {
 .advantages-list-item {
   line-height: 1.5;
   font-size: 16px;
+  width: 264px;
+}
+
+.advantages-section {
+  display: flex;
+  justify-content: center;
 }
 
 /* =============================OFFERS=================================== */
@@ -166,15 +245,42 @@ button {
   letter-spacing: 0.02em;
   color: var(--title-color-navyblue);
   font-weight: 700;
+  margin-top: 120px;
+}
+
+.occupation-title {
+  margin-bottom: 72px;
+}
+
+.container-occupation {
+  display: flex;
+  justify-content: center;
+}
+.occupation-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 /* ===============================================OUR TEAM====================== */
-.member-list p {
-  line-height: 1.5;
-  font-size: 16px;
+
+.our-team {
+  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* display: flex;
+justify-content: center; */
+  background-color: var(--secondary-background-color);
+  align-items: center;
 }
 
+.container-our-team {
+  display: flex;
+  justify-content: center;
+}
 .our-team-title {
+  text-align: center;
+  margin-bottom: 72px;
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   letter-spacing: 0.02em;
@@ -182,8 +288,20 @@ button {
   line-height: 1.1;
 }
 
-.our-team {
-  background-color: var(--secondary-background-color);
+.container-our-team {
+  display: flex;
+  justify-content: center;
+}
+
+.member-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.member-list p {
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .member {
@@ -196,10 +314,22 @@ button {
   width: 264px;
   height: 380px;
   background-color: var(--main-background-color);
-  margin: 24px;
 }
 
 /* =========================================FOOTER========================== */
+
+.bottom {
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-container {
+width: 1158px;
+}
+
 footer .second-logo {
   color: #f4f4fd;
   font-weight: 800;
@@ -215,9 +345,10 @@ footer {
 }
 
 .summury {
-  width: 264px;
+  max-width: 264px;
   color: #e7e9fc;
   line-height: 1.5;
+  margin-top: 16px;
 }
 
 /* =====================================================PORTFOLIO======================== */
@@ -230,7 +361,7 @@ footer {
 }
 
 .button-list {
-    display: flex;
+  display: flex;
 }
 
 .white-button:hover,
@@ -278,4 +409,3 @@ footer {
   font-size: 16px;
   color: var(--text-color-slate);
 }
-
