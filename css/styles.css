@@ -24,6 +24,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
@@ -44,18 +45,20 @@ a {
   letter-spacing: 0.03em;
   display: flex;
   align-items: center;
+}
 
-  .container {
-    width: 1158px;
-    display: flex;
+.container {
+  width: 1158px;
+  /* display: flex;
     justify-content: center;
-    margin: auto;
-  }
+    margin: auto; */
 }
 /* ==============================FLEX======================= */
 .header {
-  display: flex;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .site-nav {
   display: flex;
 }
@@ -66,14 +69,14 @@ a {
 
 .contact-list {
   display: flex;
-      align-items: center;
+  align-items: center;
 }
 
 .container-header {
   display: flex;
   padding: 24px 15px 24px 15px;
   margin: auto;
-      align-items: center;
+  align-items: center;
 }
 /* ==============================FLEX======================= */
 
@@ -91,6 +94,7 @@ header {
   line-height: 1.5;
   margin-right: 40px;
 }
+
 .nav-list li:first-child {
   margin-left: 77px;
 }
@@ -98,6 +102,7 @@ header {
 .nav-list li:last-child {
   margin-right: 331px;
 }
+
 .contact-list li:first-child {
   margin-right: 40px;
 }
@@ -167,6 +172,7 @@ button {
   letter-spacing: 0.04em;
   line-height: 1.17;
   display: flex;
+  border: 0ex;
 }
 
 .blue-button {
@@ -256,20 +262,28 @@ button {
   display: flex;
   justify-content: center;
 }
+
 .occupation-list {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
 
+.occupation {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 /* ===============================================OUR TEAM====================== */
 
 .our-team {
   margin-top: 120px;
   padding-top: 120px;
   padding-bottom: 120px;
-  /* display: flex;
-justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--secondary-background-color);
   align-items: center;
 }
@@ -278,6 +292,7 @@ justify-content: center; */
   display: flex;
   justify-content: center;
 }
+
 .our-team-title {
   text-align: center;
   margin-bottom: 72px;
@@ -299,6 +314,11 @@ justify-content: center; */
   gap: 24px;
 }
 
+.member-list .project-item-text {
+  text-align: center;
+  padding-left: 0px;
+}
+
 .member-list p {
   line-height: 1.5;
   font-size: 16px;
@@ -314,6 +334,9 @@ justify-content: center; */
   width: 264px;
   height: 380px;
   background-color: var(--main-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* =========================================FOOTER========================== */
@@ -327,7 +350,7 @@ justify-content: center; */
 }
 
 .bottom-container {
-width: 1158px;
+  width: 1158px;
 }
 
 footer .second-logo {
@@ -353,6 +376,21 @@ footer {
 
 /* =====================================================PORTFOLIO======================== */
 
+.list-button-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.container-list-button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 96px;
+}
+
 .white-button {
   border-radius: 4px;
   padding: 16px 32px 16px 32px;
@@ -362,6 +400,7 @@ footer {
 
 .button-list {
   display: flex;
+  gap: 24px;
 }
 
 .white-button:hover,
@@ -377,11 +416,24 @@ footer {
   color: #ffffff;
 }
 
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 72px;
+  gap: 24px;
+}
+
+.project-item:nth-child(n + 4) {
+  margin-top: 48px;
+}
+
 .project-card li a {
-  border: 0.5px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   width: 360px;
   height: 300px;
+}
+
+.project-card li{
+  border: 0.5px solid #f4f4fd;
 }
 
 .project-item-title {
@@ -391,15 +443,19 @@ footer {
   font-weight: 700;
 }
 
+.project-item-text {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 16px;
+}
+
+.project-item-text p {
+  margin-top: 8px;
+}
+
 .project-item {
   width: 360px;
   height: 420px;
-  border: 0.5px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.project-card li a:hover,
-.project-card li a:focus {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
