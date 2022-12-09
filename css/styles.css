@@ -51,7 +51,7 @@ a {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: 0 auto;
 
 }
 /* ==============================FLEX======================= */
@@ -62,12 +62,12 @@ a {
 
 .site-nav {
   display: flex;
+  margin-right: 331px;
 }
 
 .nav-list {
   display: flex;
     margin-left: 77px;
-        margin-right: 331px;
 }
 
 .contact-list {
@@ -267,10 +267,6 @@ button {
 }
 
 .occupation {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -279,16 +275,7 @@ button {
 .our-team {
   padding-top: 120px;
   padding-bottom: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: var(--secondary-background-color);
-  align-items: center;
-}
-
-.container-our-team {
-  display: flex;
-  justify-content: center;
 }
 
 .our-team-title {
@@ -372,18 +359,8 @@ footer {
 /* =====================================================PORTFOLIO======================== */
 
 .list-button-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 120px;
   padding-top: 96px;
-}
-
-.container-list-button {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .white-button {
@@ -415,7 +392,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-top: 72px;
-  ROW-gap: 48px;
+  row-gap: 48px;
   column-gap: 24px;
 }
 
@@ -460,6 +437,3 @@ footer {
   color: var(--text-color-slate);
 }
 
-img{
-  display: block;
-}
