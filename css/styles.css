@@ -436,6 +436,7 @@ footer {
   padding-bottom: 32px;
   padding-left: 16px;
       border: 0.5px solid #f4f4fd;
+          border-top: none;
 }
 
 .project-item-text p {
@@ -454,3 +455,4 @@ footer {
   font-size: 16px;
   color: var(--text-color-slate);
 }
+
