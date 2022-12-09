@@ -438,6 +438,7 @@ footer {
       border: 0.5px solid #f4f4fd;
           border-top: none;
           box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 2px 1px rgb(46 47 66 / 8%);
+              box-sizing: border-box;
 }
 
 .project-item-text p {
@@ -447,6 +448,7 @@ footer {
 .project-item {
   width: 360px;
   height: 420px;
+  
 }
 
 .project-item a {
@@ -458,3 +460,6 @@ footer {
   color: var(--text-color-slate);
 }
 
+img{
+  display: block;
+}
