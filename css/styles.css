@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 /* ==================NAVIGAGION================== */
 .logo {
   font-size: 18px;
@@ -52,7 +56,6 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
 }
 /* ==============================FLEX======================= */
 .header {
@@ -67,7 +70,7 @@ a {
 
 .nav-list {
   display: flex;
-    margin-left: 77px;
+  margin-left: 77px;
 }
 
 .contact-list {
@@ -94,7 +97,7 @@ header {
   font-weight: 700;
   color: var(--title-color-navyblue);
   line-height: 1.5;
-  }
+}
 
 .nav-list li:nth-child(-n + 2) {
   margin-right: 40px;
@@ -258,6 +261,7 @@ button {
 .container-occupation {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .occupation-list {
@@ -291,6 +295,14 @@ button {
 .container-our-team {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.our-team-member {
+    padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  text-align: center;
 }
 
 .member-list {
@@ -307,6 +319,7 @@ button {
 .member-list p {
   line-height: 1.5;
   font-size: 16px;
+  margin-top: 8px;
 }
 
 .member {
@@ -373,6 +386,7 @@ footer {
 .button-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .white-button:hover,
@@ -412,10 +426,9 @@ footer {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-      border: 0.5px solid #f4f4fd;
-          border-top: none;
-          box-shadow: 0px 1px 6px rgb(46 47 66 / 8%), 0px 1px 1px rgb(46 47 66 / 16%), 0px 2px 1px rgb(46 47 66 / 8%);
-              box-sizing: border-box;
+   box-sizing: border-box;
+  border: 0.5px solid #F4F4FD;
+   border-top: none;
 }
 
 .project-item-text p {
@@ -425,7 +438,6 @@ footer {
 .project-item {
   width: 360px;
   height: 420px;
-  
 }
 
 .project-item a {
@@ -436,4 +448,3 @@ footer {
   font-size: 16px;
   color: var(--text-color-slate);
 }
-
